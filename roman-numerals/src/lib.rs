@@ -35,19 +35,16 @@ impl Roman {
             return String::new();
         }
 
-        if let Some((divisor, numeral)) = divisors.last() {
-            if *divisor > number {
-                return Roman::calculate_numeral(number, &divisors[0..divisors.len() - 1]);
+        match divisors[divisors.len() - 1] {
+            (divisor, numeral) if divisor > number => {
+                Roman::calculate_numeral(number, &divisors[0..divisors.len() - 1])
             }
-
-            return format!(
+            (divisor, numeral) => format!(
                 "{}{}",
                 numeral,
-                Roman::calculate_numeral(number - *divisor, divisors)
-            );
+                Roman::calculate_numeral(number - divisor, divisors)
+            ),
         }
-
-        unreachable!()
     }
 }
 
