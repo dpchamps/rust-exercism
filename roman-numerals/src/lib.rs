@@ -2,7 +2,6 @@
 extern crate lazy_static;
 
 use std::fmt::{Display, Formatter};
-use std::iter::Iterator;
 
 lazy_static! {
     static ref base_divisors: Vec<(u32, &'static str)> = vec![
@@ -31,9 +30,9 @@ pub struct Roman {
 }
 
 impl Roman {
-    fn calculate_numeral(number: u32, divisors: &[(u32, &'static str)]) -> Result<String, ()> {
+    fn calculate_numeral(number: u32, divisors: &[(u32, &'static str)]) -> String {
         if divisors.len() == 0 || number == 0 {
-            return Ok(String::new());
+            return String::new();
         }
 
         if let Some((divisor, numeral)) = divisors.last() {
@@ -41,14 +40,14 @@ impl Roman {
                 return Roman::calculate_numeral(number, &divisors[0..divisors.len() - 1]);
             }
 
-            return Ok(format!(
+            return format!(
                 "{}{}",
                 numeral,
-                Roman::calculate_numeral(number - *divisor, divisors)?
-            ));
+                Roman::calculate_numeral(number - *divisor, divisors)
+            );
         }
 
-        Err(())
+        unreachable!()
     }
 }
 
@@ -61,7 +60,7 @@ impl Display for Roman {
 impl From<u32> for Roman {
     fn from(num: u32) -> Self {
         Roman {
-            numeral: Roman::calculate_numeral(num, &base_divisors[..]).unwrap(),
+            numeral: Roman::calculate_numeral(num, &base_divisors[..]),
         }
     }
 }
