@@ -2,13 +2,22 @@
 <project version="4">
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/allergies/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/raindrops/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/clock/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/dot-dsl/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abeb608d-f6ba-4240-a479-70bbed5a013d" name="Default Changelist" comment="" />
+    <list default="true" id="abeb608d-f6ba-4240-a479-70bbed5a013d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="LPmYZqRd" />
@@ -22,11 +31,88 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dot-dsl" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+  </component>
+  <component name="RunManager" selected="Cargo Command.Test test_empty_graph">
+    <configuration name="Test test_add_minutes" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package clock --test clock test_add_minutes -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/clock" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_add_no_minutes" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package clock --test clock test_add_no_minutes -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/clock" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_add_to_next_hour" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package clock --test clock test_add_to_next_hour -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/clock" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_empty_graph" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package dot-dsl --test dot-dsl test_empty_graph -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/dot-dsl" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_negative_hour" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package clock --test clock test_negative_hour -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/clock" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo Command.Test test_empty_graph" />
+        <item itemvalue="Cargo Command.Test test_add_to_next_hour" />
+        <item itemvalue="Cargo Command.Test test_add_no_minutes" />
+        <item itemvalue="Cargo Command.Test test_add_minutes" />
+        <item itemvalue="Cargo Command.Test test_negative_hour" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -51,10 +137,33 @@
       <option name="presentableId" value="Default" />
       <updated>1585260262410</updated>
       <workItem from="1585260263666" duration="2273000" />
+      <workItem from="1596907472445" duration="9216000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="738" y="179" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596987761080">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="738" y="179" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1596987761080" />
+    <state width="1864" height="247" key="GridCell.Tab.0.bottom" timestamp="1596987818860">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="247" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1596987818860" />
+    <state width="1864" height="247" key="GridCell.Tab.0.center" timestamp="1596987818860">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="247" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1596987818860" />
+    <state width="1864" height="247" key="GridCell.Tab.0.left" timestamp="1596987818859">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="247" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1596987818859" />
+    <state width="1864" height="247" key="GridCell.Tab.0.right" timestamp="1596987818860">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="247" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1596987818860" />
   </component>
 </project>
