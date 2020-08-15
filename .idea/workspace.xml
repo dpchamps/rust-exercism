@@ -8,11 +8,7 @@
     <cargoProject FILE="$PROJECT_DIR$/../run-length-encoding/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abeb608d-f6ba-4240-a479-70bbed5a013d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/rust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/rust.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="abeb608d-f6ba-4240-a479-70bbed5a013d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +137,7 @@
       <updated>1585260262410</updated>
       <workItem from="1585260263666" duration="2273000" />
       <workItem from="1596907472445" duration="9721000" />
-      <workItem from="1597507878164" duration="4605000" />
+      <workItem from="1597507878164" duration="4877000" />
     </task>
     <servers />
   </component>
