@@ -22,9 +22,14 @@
       <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hamming/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hamming/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../hamming/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../hamming/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../allergies/target" />
       <excludeFolder url="file://$MODULE_DIR$/../clock/target" />
       <excludeFolder url="file://$MODULE_DIR$/../dot-dsl/target" />
+      <excludeFolder url="file://$MODULE_DIR$/../hamming/target" />
       <excludeFolder url="file://$MODULE_DIR$/../raindrops/target" />
       <excludeFolder url="file://$MODULE_DIR$/../run-length-encoding/target" />
     </content>
