@@ -4,6 +4,7 @@ pub enum Error {
     GameComplete,
 }
 
+#[derive(Default)]
 pub struct BowlingGame {
     frames: Vec<u16>,
     current_pins: u16,
@@ -69,12 +70,10 @@ impl BowlingGame {
             return Err(Error::GameComplete);
         }
 
-        let current_frame = self.frames.len();
-        let is_open_frame = current_frame % 2 == 0;
-        let is_strike = is_open_frame && pins == 10;
-
         self.frames.push(pins);
         self.current_pins -= pins;
+
+        let is_strike = self.is_open_frame() && pins == 10;
 
         if is_strike && !self.is_final_frame() {
             self.frames.push(0);
