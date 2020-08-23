@@ -23,7 +23,7 @@ fn compute_score((frame_num, window): (usize, &[u16])) -> u16 {
         3
     } else if is_strike {
         2
-    } else if is_spare{
+    } else if is_spare {
         1
     } else {
         0
@@ -89,19 +89,20 @@ impl BowlingGame {
 
         if self.is_game_over() {
             self.is_done = true;
-            self.frames.extend(&vec![0, 0, 0, 0]);
         }
 
         Ok(())
     }
 
     pub fn score(&self) -> Option<u16> {
+        let padded_frames = [self.frames.as_slice(), vec![0, 0, 0, 0].as_slice()].concat();
+
         if !self.is_done {
             return None;
         }
 
         Some(
-            self.frames
+            padded_frames
                 .windows(6)
                 .step_by(2)
                 .enumerate()
