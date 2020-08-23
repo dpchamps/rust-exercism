@@ -2,36 +2,11 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/..">
-      <sourceFolder url="file://$MODULE_DIR$/../allergies/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../allergies/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../allergies/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../allergies/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../raindrops/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../raindrops/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../raindrops/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../raindrops/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../clock/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../clock/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../clock/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../clock/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../dot-dsl/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../dot-dsl/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../dot-dsl/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../dot-dsl/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../run-length-encoding/benches" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../hamming/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../hamming/examples" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../hamming/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../hamming/benches" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../allergies/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../clock/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../dot-dsl/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../hamming/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../raindrops/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../run-length-encoding/target" />
+      <sourceFolder url="file://$MODULE_DIR$/../bowling/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../bowling/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../bowling/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../bowling/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../bowling/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
