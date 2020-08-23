@@ -50,6 +50,10 @@ impl BowlingGame {
         self.frames.len() >= 19
     }
 
+    fn is_strike(&self) -> bool {
+        self.is_open_frame() && self.current_pins == 0
+    }
+
     fn is_game_over(&self) -> bool {
         !self.needs_fill_ball && self.frames.len() > 19 || self.frames.len() == 21
     }
@@ -73,9 +77,8 @@ impl BowlingGame {
         self.frames.push(pins);
         self.current_pins -= pins;
 
-        let is_strike = self.is_open_frame() && pins == 10;
 
-        if is_strike && !self.is_final_frame() {
+        if self.is_strike() && !self.is_final_frame() {
             self.frames.push(0);
         }
 
