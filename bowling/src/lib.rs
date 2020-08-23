@@ -103,9 +103,7 @@ impl BowlingGame {
         Some(
             self.frames
                 .windows(6)
-                .enumerate()
-                .filter(|&(i, _)| i % 2 == 0)
-                .map(|(_, window)| window)
+                .step_by(2)
                 .enumerate()
                 .map(compute_score)
                 .sum(),
