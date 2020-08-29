@@ -68,15 +68,12 @@ impl BowlingGame {
     pub fn roll(&mut self, pins: u16) -> Result<(), Error> {
         if pins > self.current_pins {
             return Err(Error::NotEnoughPinsLeft);
-        }
-
-        if self.is_done {
+        } else if self.is_done {
             return Err(Error::GameComplete);
         }
 
         self.frames.push(pins);
         self.current_pins -= pins;
-
 
         if self.is_strike() && !self.is_final_frame() {
             self.frames.push(0);

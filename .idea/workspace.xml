@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/../bowling/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/isbn-verifier/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7dd173d-7b1c-4adf-a476-4032e7de34d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bowling/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../bowling/src/lib.rs" afterDir="false" />
+    <list default="true" id="c093a655-c8ea-4dc0-a765-32970d489d0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rust.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bowling/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/bowling/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="iy38ibjf" />
+    <option name="directoryName" value="kr1cqtx4" />
   </component>
-  <component name="ProjectId" id="1gVl3VDUlTyo8CymrIS6NskeQeI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1gmbSViyKaJQUkfJOR1SneSDi8y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,8 +30,84 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bowling" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/isbn-verifier" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+  </component>
+  <component name="RunManager" selected="Cargo Command.Test test_valid">
+    <configuration name="Test test_invalid_character_in_isbn" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package isbn-verifier --test isbn-verifier test_invalid_character_in_isbn -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/isbn-verifier" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_invalid_check_digit" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package isbn-verifier --test isbn-verifier test_invalid_check_digit -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/isbn-verifier" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_invalid_isbn_with_invalid_X" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package isbn-verifier --test isbn-verifier test_invalid_isbn_with_invalid_X -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/isbn-verifier" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_valid" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package isbn-verifier --test isbn-verifier test_valid -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/isbn-verifier" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test test_valid_check_digit_of_10" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package isbn-verifier --test isbn-verifier test_valid_check_digit_of_10 -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/isbn-verifier" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo Command.Test test_valid" />
+        <item itemvalue="Cargo Command.Test test_invalid_isbn_with_invalid_X" />
+        <item itemvalue="Cargo Command.Test test_invalid_character_in_isbn" />
+        <item itemvalue="Cargo Command.Test test_invalid_check_digit" />
+        <item itemvalue="Cargo Command.Test test_valid_check_digit_of_10" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -39,13 +117,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7dd173d-7b1c-4adf-a476-4032e7de34d7" name="Default Changelist" comment="" />
-      <created>1598207441670</created>
+      <changelist id="c093a655-c8ea-4dc0-a765-32970d489d0d" name="Default Changelist" comment="" />
+      <created>1598722714879</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598207441670</updated>
-      <workItem from="1598207450968" duration="130000" />
-      <workItem from="1598207602663" duration="11154000" />
+      <updated>1598722714879</updated>
+      <workItem from="1598722719444" duration="6650000" />
     </task>
     <servers />
   </component>
@@ -53,9 +130,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="641" y="214" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598207634343">
+    <state x="723" y="276" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598722820864">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="641" y="214" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1598207634343" />
+    <state x="723" y="276" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1598722820864" />
+    <state width="1671" height="244" key="GridCell.Tab.0.bottom" timestamp="1598727321858">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1671" height="244" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1598727321858" />
+    <state width="1671" height="244" key="GridCell.Tab.0.center" timestamp="1598727321857">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1671" height="244" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1598727321857" />
+    <state width="1671" height="244" key="GridCell.Tab.0.left" timestamp="1598727321857">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1671" height="244" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1598727321857" />
+    <state width="1671" height="244" key="GridCell.Tab.0.right" timestamp="1598727321857">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1671" height="244" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1598727321857" />
   </component>
 </project>
